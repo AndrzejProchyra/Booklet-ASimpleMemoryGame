@@ -3,7 +3,6 @@
 \let\wholebook=\relax
 
 %\usepackage{amsmath}
-
 \usepackage{import}
 \subimport{_support/latex/}{common.tex}
 
@@ -46,7 +45,7 @@
 \cleartoverso
 {\small
 
-  Copyright 2024 by «& attribution».
+  Copyright 2023 by «& attribution».
 
   The contents of this book are protected under the Creative Commons
   Attribution-NonCommercial-NoDerivs 
@@ -96,10 +95,10 @@ Layout and typography based on the \textcode{sbabook} \LaTeX{} class by Damien P
 
 «& content»
 
-% lulu requires an empty page at the end. That's why I'm using
-% \backmatter here.
-\backmatter
-
 % Index would go here
+\bibliographystyle{abbrv}
+\bibliography{«& bibFile»}
+
+\backmatter
 
 \end{document}
